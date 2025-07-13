@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azhar Haikal - My Space</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-950 text-gray-100">
+
+    <!-- Three.js Background Canvas -->
+    <canvas id="three-js-background"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-50 z-50 p-4 shadow-lg rounded-b-lg h-16 flex items-center">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2">
+                <a href="#home" class="text-2xl font-bold text-blue-400 hover:text-blue-300 transition duration-300 rounded-md p-2">Azhar Haikal</a>
+            </div>
+            <div class="space-x-4 flex-grow justify-end hidden md:flex" id="navbar-links">
+                <a href="#home" class="text-gray-200 hover:text-blue-400 transition duration-300 px-3 py-2 rounded-md">Home</a>
+                <a href="#about" class="text-gray-200 hover:text-blue-400 transition duration-300 px-3 py-2 rounded-md">About</a>
+                <a href="#projects" class="text-gray-200 hover:text-blue-400 transition duration-300 px-3 py-2 rounded-md">Projects</a>
+                <a href="#skills" class="text-gray-200 hover:text-blue-400 transition duration-300 px-3 py-2 rounded-md">Skills</a>
+                <a href="#contact" class="text-gray-200 hover:text-blue-400 transition duration-300 px-3 py-2 rounded-md">Contact</a>
+            </div>
+            <div class="menu-toggle md:hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Black Hole Video Background -->
+    <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+        <video autoplay loop muted plays-inline src="assets/video/blackhole.mp4"></video>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section flex-col justify-center text-center relative overflow-hidden">
+        <div class="hero-content z-10 p-6 rounded-xl max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-start justify-between text-left gap-10">
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight leading-tight mt-20">
+                    Journey Through My <span class="rgb-text-animation inline">Universe</span>
+                    </h1>
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight leading-tight">
+                    Provide the best <span class="rgb-text-animation inline">Experience</span>
+                    </h1>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-lg md:text-xl text-gray-300 mb-6 mt-20">
+                    A software engineer exploring the <span class="rgb-text-animation inline">cosmos of code</span> and design. Passionate about crafting intuitive user experiences, building scalable applications, and solving real-world problems through elegant solutions. Continuously learning, iterating, and pushing boundaries in both frontend and backend development. Let's turn ideas into impactful digital realities together.
+                    </p>
+                    <a href="#projects"
+                    class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    Explore My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-transparent"> <!-- Removed dark background to show global galaxy -->
+        <div class="container mx-auto text-center p-8">
+            <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-12">About Me</h2>
+            <div class="about-grid max-w-6xl mx-auto">
+                <!-- Left Column: Personal Avatar & Greeting -->
+                <div class="about-card p-6 flex flex-col items-center justify-center">
+                    <img src="assets/image/profile.jpg" alt="Your Avatar" class="w-36 h-36 rounded-full border-4 border-blue-400 shadow-xl object-cover mb-4 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-3xl font-semibold text-blue-300 mb-2">Hi there, I'm Azhar Haikal</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I'm a passionate developer on a mission to build innovative digital experiences. My journey in tech is driven by curiosity and a desire to create impactful solutions.
+                    </p>
+                </div>
+
+                <!-- Center Column: Circular Tech Icons -->
+                <div class="about-card p-6 flex flex-col items-center justify-center">
+                    <h3 class="text-3xl font-semibold text-purple-300 mb-6">Tech Stack</h3>
+                    <p class="text-gray-300 text-base mb-6">
+                        My toolkit includes a versatile set of technologies, allowing me to tackle various challenges in software development.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="tech-icon-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo">
+                        </div>
+                        <div class="tech-icon-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo">
+                        </div>
+                        <div class="tech-icon-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+                        </div>
+                        <div class="tech-icon-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+                        </div>
+                        <div class="tech-icon-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo">
+                        </div>
+                        <div class="tech-icon-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: 3D Rotating Earth Video -->
+                <div class="about-card p-6 flex flex-col items-center justify-center">
+                    <h3 class="text-3xl font-semibold text-green-300 mb-4">Global Perspective</h3>
+                    <!-- Placeholder video URL. Replace with your actual globe.mp4 -->
+                    <video class="earth-video rounded-xl shadow-lg" src="assets/video/globe.mp4" autoplay muted loop playsinline></video>
+                    <p class="text-gray-300 text-base mt-4 mb-6">
+                        My work aims for global impact, connecting with users across the planet.
+                    </p>
+                    <a href="#contact" class="inline-block bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-transparent">
+        <div class="container mx-auto text-center p-8">
+            <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-12">My Projects</h2>
+
+            <!-- Project Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="filter-button active-filter" data-filter="all">All</button>
+            <button class="filter-button" data-filter="e-commerce">E-commerce</button>
+            <button class="filter-button" data-filter="mobile-app">Mobile Banking</button>
+            <button class="filter-button" data-filter="banking">HRIS</button>
+            <button class="filter-button" data-filter="payment">HMRS</button>
+            <button class="filter-button" data-filter="coffee-shop">Social Media</button>
+            <button class="filter-button" data-filter="gaming">Gaming</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="projects-grid">
+
+            <!-- E-commerce -->
+            <div class="project-card rounded-2xl p-6 border border-gray-700 hover:border-blue-500 transition duration-300" data-category="e-commerce">
+                <div class="project-card-inner">
+                <img src="assets/image/project-1.jpg" alt="E-Commerce" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-2">Project <span class="rgb-text-animation">Einckiug</span></h3>
+                <p class="text-gray-400 text-base mb-4">
+                    Multi-vendor e-commerce platform with real-time inventory, payment gateway, and promotions management.
+                </p>
+                <p class="text-sm text-gray-500 mb-2">Tech: React.js, Node.js, MongoDB, Redis, AWS S3, Kafka</p>
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">View Project</a>
+                </div>
+            </div>
+
+            <!-- Mobile Banking -->
+            <div class="project-card rounded-2xl p-6 border border-gray-700 hover:border-purple-500 transition duration-300" data-category="mobile-app">
+                <div class="project-card-inner">
+                <img src="assets/image/project-2.jpg" alt="Mobile Banking" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                <h3 class="text-2xl font-semibold text-purple-300 mb-2">Project <span class="rgb-text-animation">Banking</span></h3>
+                <p class="text-gray-400 text-base mb-4">
+                    A secure mobile banking app with QR payments, fund transfer, and balance insights using fingerprint authentication.
+                </p>
+                <p class="text-sm text-gray-500 mb-2">Tech: Flutter, Firebase, REST API, OAuth2, Spring Boot, PostgreSQL</p>
+                <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full">View Project</a>
+                </div>
+            </div>
+
+            <!-- Gaming -->
+            <div class="project-card rounded-2xl p-6 border border-gray-700 hover:border-green-500 transition duration-300" data-category="gaming">
+                <div class="project-card-inner">
+                <img src="assets/image/project-3.jpg" alt="3D Game" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                <h3 class="text-2xl font-semibold text-green-300 mb-2">Project <span class="rgb-text-animation">Gaming</span></h3>
+                <p class="text-gray-400 text-base mb-4">
+                    A 3D interactive space simulation game with realistic gravity and physics engine built using Three.js.
+                </p>
+                <p class="text-sm text-gray-500 mb-2">Tech: Three.js, WebGL, JavaScript, GSAP</p>
+                <a href="#" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full">View Project</a>
+                </div>
+            </div>
+
+            <!-- HRIS -->
+            <div class="project-card rounded-2xl p-6 border border-gray-700 hover:border-red-500 transition duration-300" data-category="banking">
+                <div class="project-card-inner">
+                <img src="assets/image/project-4.jpg" alt="HRIS" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                <h3 class="text-2xl font-semibold text-red-300 mb-2">Project <span class="rgb-text-animation">HRIS</span></h3>
+                <p class="text-gray-400 text-base mb-4">
+                    Human Resource Information System with attendance, leave management, payroll, and reporting dashboard.
+                </p>
+                <p class="text-sm text-gray-500 mb-2">Tech: Spring Boot, Thymeleaf, MySQL, RabbitMQ, Docker</p>
+                <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full">View Project</a>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="project-card rounded-2xl p-6 border border-gray-700 hover:border-yellow-500 transition duration-300" data-category="coffee-shop">
+                <div class="project-card-inner">
+                <img src="assets/image/project-5.jpg" alt="Social Media App" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Project <span class="rgb-text-animation">Social Media</span></h3>
+                <p class="text-gray-400 text-base mb-4">
+                    A location-based social media app where users can post, react, and share stories with AR filters and friend suggestions.
+                </p>
+                <p class="text-sm text-gray-500 mb-2">Tech: Flutter, GraphQL, Node.js, AWS Amplify, MongoDB</p>
+                <a href="#" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full">View Project</a>
+                </div>
+            </div>
+
+            <!-- HMRS -->
+            <div class="project-card rounded-2xl p-6 border border-gray-700 hover:border-teal-500 transition duration-300" data-category="payment">
+                <div class="project-card-inner">
+                <img src="assets/image/project-6.jpg" alt="HMRS" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                <h3 class="text-2xl font-semibold text-teal-300 mb-2">Project <span class="rgb-text-animation">HMRS</span></h3>
+                <p class="text-gray-400 text-base mb-4">
+                    Human Resources Management System (HMRS) with employee management, payroll processing, and performance tracking.
+                </p>
+                <p class="text-sm text-gray-500 mb-2">Tech: Java Spring Boot, PostgreSQL, Microservices, Kafka, Docker</p>
+                <a href="#" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full">View Project</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-transparent"> <!-- Removed dark background to show global galaxy -->
+        <div class="container mx-auto text-center p-8 rounded-2xl max-w-5xl">
+            <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-12">My Skills</h2>
+            <div class="skills-carousel-container">
+                <div class="skills-carousel-track">
+                    <!-- Duplicate content for seamless loop -->
+                    <!-- Skill 1: HTML5 -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">HTML5</span>
+                    </div>
+                    <!-- Skill 2: CSS3 -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">CSS3</span>
+                    </div>
+                    <!-- Skill 3: Go -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">GO</span>
+                    </div>
+                    <!-- Skill 4: React -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">React.js</span>
+                    </div>
+                    <!-- Skill 5: Linux -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Linux</span>
+                    </div>
+                    <!-- Skill 6: Python -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Python</span>
+                    </div>
+                    <!-- Skill 7: SQL (PostgreSQL for example) -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">PostgreSQL</span>
+                    </div>
+                    <!-- Skill 8: Git -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Git</span>
+                    </div>
+                    <!-- Skill 9: Cloud (AWS for example) -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">AWS Cloud</span>
+                    </div>
+                    <!-- Skill 10: Docker -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Docker</span>
+                    </div>
+                    <!-- Skill 11: Spring -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Spring</span>
+                    </div>
+                    <!-- Skill 12: Java -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Java</span>
+                    </div>
+
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">HTML5</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">CSS3</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">GO</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">React.js</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Linux</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Python</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">PostgreSQL</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Git</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">AWS Cloud</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Docker</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Spring</span>
+                    </div>
+                    <div class="skills-carousel-item skill-icon p-4 rounded-xl transition duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java Logo" class="mb-2">
+                        <span class="text-lg font-semibold text-gray-200">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-transparent relative overflow-hidden"> <!-- Removed dark background to show global galaxy -->
+        <!-- Floating elements for galaxy background feel -->
+        <div class="floating-element w-16 h-16 bg-blue-500 rounded-full blur-xl opacity-30"></div>
+        <div class="floating-element w-24 h-24 bg-purple-500 rounded-full blur-xl opacity-30"></div>
+        <div class="floating-element w-12 h-12 bg-green-500 rounded-full blur-xl opacity-30"></div>
+        <div class="floating-element w-20 h-20 bg-yellow-500 rounded-full blur-xl opacity-30"></div>
+        <div class="floating-element w-28 h-28 bg-pink-500 rounded-full blur-xl opacity-30"></div>
+
+        <div class="container mx-auto text-center p-8 bg-black-800 rounded-2xl shadow-2xl max-w-3xl z-10 border border-gray-500">
+            <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-500 mb-12">Contact Me</h2>
+            <form class="flex flex-col gap-6">
+                <input type="text" placeholder="Your Name" class="p-4 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 text-gray-200 placeholder-gray-400">
+                <input type="email" placeholder="Your Email" class="p-4 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 text-gray-200 placeholder-gray-400">
+                <textarea placeholder="Your Message" rows="6" class="p-4 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 text-gray-200 placeholder-gray-400"></textarea>
+                <button type="submit" class="bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 text-gray-400 text-center p-6 mt-12 rounded-t-lg">
+        <p>©️ 2025 Your Name. All rights reserved. Built with the power of the cosmos.</p>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
