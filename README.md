@@ -28,16 +28,14 @@ Live demo : https://azhar-portfolio-space.netlify.app/
 ```bash
 git clone https://github.com/AzharHaikal/azhar-portfolio-space.git
 cd my-space-portfolio
+```
 Open the HTML File:
-
 No build tools required.
+open index.html or double-click index.html
 
-open index.html
-# or
-double-click index.html
 Ensure Assets Are Linked:
+```bash
 Make sure the following folders are correctly placed:
-
 assets/
 ├── css/
 │   └── style.css
@@ -48,36 +46,40 @@ assets/
 │   └── globe.mp4
 ├── image/
 │   └── [project and profile images]
-🖼️ Live Preview / Screenshot
+```
+
+---
+
+## 🖼️ Live Preview / Screenshot
 
 <sub>Replace with an actual screenshot of your site once deployed.</sub>
 
-🎓 Attributions
+---
+
+## 🎓 Attributions
 Three.js for the starfield galaxy effect.
-
 Tailwind CSS for utility-first styling.
-
 Devicon for skill icons.
-
 Google Fonts - Inter.
-
 AOS concept adapted manually for scroll-based effects.
-
 Video content: Replace with your own or ensure usage complies with licensing.
 
-📄 License
+---
+
+## 📄 License
 This project is licensed under the MIT License.
 Feel free to fork, remix, or reuse—credit appreciated but not required.
 
-🤝 Contribute or Connect
+---
+
+## 🤝 Contribute or Connect
 Got ideas to improve this portfolio?
 Pull requests and issues are welcome!
 
-📫 Contact: [your-email@example.com]
-🌐 Portfolio: [yourwebsite.com]
+## 📫 Contact: [your-email@example.com]
+## 🌐 Portfolio: [yourwebsite.com]
 
 Let me know if you’d like:
 - A screenshot generated from the file
 - Instructions for deploying it to GitHub Pages
 - Conversion to a full static site with routing or frameworks like Astro, Next.js, etc.
-```
