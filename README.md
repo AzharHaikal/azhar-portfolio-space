@@ -75,11 +75,3 @@ Feel free to fork, remix, or reuse—credit appreciated but not required.
 ## 🤝 Contribute or Connect
 Got ideas to improve this portfolio?
 Pull requests and issues are welcome!
-
-## 📫 Contact: [your-email@example.com]
-## 🌐 Portfolio: [yourwebsite.com]
-
-Let me know if you’d like:
-- A screenshot generated from the file
-- Instructions for deploying it to GitHub Pages
-- Conversion to a full static site with routing or frameworks like Astro, Next.js, etc.
